@@ -27,17 +27,22 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: ide
     attributes:
-      label: What type of browser are you seeing the problem on?
+      label: Which JetBrains IDE are you using?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - PHPStorm
+        - Webstorm
+        - Other
     validations:
       required: true
+  - type: input
+    id: ide-version
+    attributes:
+      label: IDE Version
+      description: Which Version of the JetBrains IDE are you using?
+      placeholder: ex. 2022.3.3
 
   - type: dropdown
     id: operating-systems
